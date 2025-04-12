@@ -1,1 +1,138 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinicius Hernandes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" target="_blank">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/me.jpg" alt="Your Name">
+    <div class="intro-text">
+      <h1>Vinicius Hernandes</h1>
+      <p>
+        I’m currently a PhD candidate in Physics at Delft University of Technology, where I’m part of the <strong>Quantum Matter and AI</strong> group, led by Eliska Greplova. My research lies at the intersection of artificial intelligence and quantum physics.
+      </p>
+      <p>
+        Lately, I’ve been exploring how deep learning can be used to simulate quantum systems, speed up experiments, and develop new tools for scientific research. I’ve also created open-source software for analyzing neural data and simulating quantum dot devices.
+      </p>
+      <p>
+        Before starting my PhD, I completed a Master’s in Physics at the Federal University of Pelotas, where I focused on applying machine learning to soft matter systems.
+      </p>
+      
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li><strong>Apr 2025:</strong> I made a personal website!</li>
+      <!-- Add more news here -->
+    </ul>
+  </section>
+
+  <section class="selected-publications">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>
+
+          <!-- Publication  -->
+    <article class="publication">
+      <h2>Adiabatic Fine-Tuning of Neural Quantum States Enables Detection of Phase Transitions in Weight Space</h2>
+      <p><em>V Hernandes, T Spriggs, S Khaleefah, E Greplova</em></p>
+      <p><strong>ICLR 2025 Workshop </strong>Neural Network Weights as a New Data Modality <strong><em>(Spotlight)</em></strong> </p>
+      <p>
+        <a href="https://arxiv.org/abs/2503.17140" target="_blank">arXiv</a> |
+        <a href="https://gitlab.com/QMAI/papers/nqsweights" target="_blank">Code</a>
+      </p>
+    </article>
+      </li>
+
+
+    <!-- Publication  -->
+    <article class="publication">
+      <h2>QDsim: A user-friendly toolbox for simulating large-scale quantum dot devices</h2>
+      <p><em>V Gualtieri, C Renshaw-Whitman, V Hernandes, E Greplova</em></p>
+      <p><strong>SciPost Physics Codebases</strong>, 046 (2025)</p>
+      <p>
+        <a href="https://scipost.org/10.21468/SciPostPhysCodeb.46" target="_blank">Paper</a> |
+        <a href="https://gitlab.com/QMAI/papers/qdsim" target="_blank">Code</a>
+      </p>
+    </article>
+      </li>
+
+      <li>
+        <!-- Publication  -->
+        <article class="publication">
+          <h2>autoMEA: Machine learning-based burst detection for multi-electrode array datasets</h2>
+          <p><em>V Hernandes, A M Heuvelmans, V Gualtieri, D H Meijer, G M van Woerden, E Greplova</em></p>
+          <p><strong>Frontiers in Neuroscience</strong>, 18:1446578 (2024)</p>
+          <p>
+            <a href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1446578/full" target="_blank">Paper</a> |
+            <a href="https://gitlab.com/QMAI/papers/autoMEA" target="_blank">Code</a>
+          </p>
+        </article>
+      </li>
+      <li>
+      <!-- Add more publications as needed -->
+    </ul>
+    <p><a href="publications.html">View all publications →</a></p>
+  </section>
+
+
+
+
+
+
+
+  
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>You can contact me by email: <a href="mailto:v.hernandes@tudelft.nl">v.hernandes@tudelft.nl</a></p>
+    <p>Or come to my office in Delft: <strong>Building 22, Room E107</strong>.</p>
+
+    <div class="contact-icons">
+      <a href="mailto:v.hernandes@tudelft.nl"><i class="fas fa-envelope"></i></a>
+      <a href="https://bsky.app/profile/vinifh.bsky.social" target="_blank">
+        <img src="images/bluesky.svg" alt="Bluesky" class="icon-bluesky">
+      </a>
+      <a href="https://linkedin.com/in/vfhernandes" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://scholar.google.com/citations?user=wf98VOAAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://github.com/vfhernandes" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://gitlab.com/vfhernandes" target="_blank"><i class="fab fa-gitlab"></i></a>
+
+    </div>
+    
+    
+  </section>
+
+  <footer>
+    <p>© Vinicius Hernandes · All rights reserved</p>
+  </footer>
+
+  <!-- Smooth scroll behavior -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

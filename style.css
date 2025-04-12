@@ -1,0 +1,246 @@
+/* Base reset and layout */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .hero .intro-text p {
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .hero img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .intro-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .intro-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    margin-top: 2em;
+  }
+  
+  .contact a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-icons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.3em;
+    color: #222;
+  }
+  .icon-bluesky {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    filter: brightness(0);
+    margin: 0 0.3em;
+    position: relative;
+    top: -2px; /* tweak this value to your taste */
+  }
+  
+  
+  .contact-icons i {
+    margin-right: 5px;
+  }
+
+  .icon-bluesky {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  }
+
+  .contact-icons a i {
+    color: #000; /* black color for Font Awesome icons */
+  }
+  
+  .contact-icons img.icon-bluesky {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    filter: brightness(0); /* turns the SVG icon black */
+  }
+  
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    .contact-icons {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  /* News section */
+.news {
+    margin-top: 60px;
+  }
+  
+  .news h2 {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+  }
+  
+  .news-list {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .news-list li {
+    margin-bottom: 10px;
+  }
+
+  /* Publications Section */
+.publications {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .publication {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  
+  .publication p {
+    margin: 5px 0;
+  }
+  
+  .publication a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .publication a:hover {
+    text-decoration: underline;
+  }
+
+  .publication img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .publications {
+    font-size: 0.9em; /* Adjust the value as needed */
+  }
+
+  .publication h2 {
+    font-size: clamp(1rem, 2vw, 1rem);
+  }
+
+  .publications h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adds space below the title */
+    padding-bottom: 10px; /* Adds additional padding below the title */
+}
+  
+
+.selected-publications {
+    padding: 2em;
+    background-color: #f9f9f9;
+    margin-top: 3em; /* adds space above Selected Publications */
+
+  }
+  
+  .selected-publications h2 {
+    margin-bottom: 1em;
+  }
+  
+  .selected-publications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-publications li {
+    margin-bottom: 1.5em;
+  }
+  
+  .selected-publications a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  .selected-publications a:hover {
+    text-decoration: underline;
+  }
+  
+
